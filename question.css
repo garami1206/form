@@ -1,0 +1,131 @@
+/* 배너 */
+.section01 {
+  height: 510px;
+  background: url(/images/misson_section01_bg.jpg) no-repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section01 .text {
+  width: 1000px;
+  font-size: 36px;
+  color: aliceblue;
+  text-align: center;
+  letter-spacing: -2px;
+  font-weight: 500;
+}
+
+/* 문의/제휴 */
+
+.section02 {
+  height: 1500px;
+  font-size: 20px;
+}
+
+.section02 .tit_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 200px 0;
+}
+
+.section02 .tit_box .tit {
+  font-size: 50px;
+  background: url(/images/titline.png) no-repeat center bottom;
+  height: 90px;
+}
+
+.section02 .tit_box .text {
+  margin-top: 20px;
+  font-size: 24px;
+  letter-spacing: -2px;
+}
+
+/* 문의박스 */
+
+.question_box {
+  background-color: #ebe7e0;
+  width: 1200px;
+  margin: 0 auto;
+  height: 800px;
+  position: relative;
+}
+form {
+  padding: 50px;
+  width: 1200px;
+  height: 800px;
+  display: flex;
+}
+
+form fieldset,
+input {
+  border: none;
+  list-style: none;
+}
+
+form fieldset {
+  width: 600px;
+}
+
+.question_btn {
+  display: block;
+  height: 60px;
+  width: 250px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -125px;
+  font-size: 20px;
+  background-color: #c5b57e;
+  color: aliceblue;
+  font-family: "SCDream";
+  border: none;
+}
+
+/* 정보 */
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_info li {
+  width: 120px;
+}
+
+.user_info li input {
+  height: 70px;
+  width: 300px;
+  background-color: #fff;
+  padding-left: 16px;
+  color: #444;
+  display: inline-block;
+  margin: 50px 0;
+  font-size: 20px;
+  font-family: "NanumBarunGothic";
+  font-weight: 300;
+}
+
+/* 문의하기 */
+.user_contents {
+  height: 800px;
+}
+.user_contents .user_question {
+  margin-right: 10px;
+  width: 120px;
+}
+#user_question {
+  width: 450px;
+  height: 500px;
+  background-color: #fff;
+  padding-left: 16px;
+  color: #444;
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: "NanumBarunGothic";
+  font-weight: 300;
+  padding: 8px;
+  border: none;
+}

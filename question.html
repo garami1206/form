@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="">
+    <title>문의/제휴</title>
+    <link rel="stylesheet" href="/css/defalut.css">
+    <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="/css/include.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/include.js"></script>
+</head>
+<body>
+    <!--헤더-->
+    <header>
+        <!--헤더컨텐츠-->
+        <div class="header_inner">
+            <!--헤더로고-->
+            <div class="header_logo">
+                <a href="/index.html"><img src="/images/header_logo.png" alt="헤더로고"></a>
+            </div>
+            <!--헤더로고-->
+            <!--헤더메뉴-->
+            <ul class="header_menu">
+                <li class="company"><a href="/company/company.html">회사</a></li>
+                <li class="mission"><a href="/misson/misson.html">미션</a></li>
+                <li class="news"><a href="/news/news.html">홍보/언론보도</a></li>
+                <li class="question"><a href="/question/question.html">문의/제휴</a></li>
+                <li class="shop"><a href="/shop/shop.html">상품</a></li>
+                <!--헤더검색-->
+                <li class="surch">
+                    <a href="#">
+                        <img src="/images/header_surchicon.png" alt="헤더검색">
+                    </a>
+                </li>
+                <!--헤더검색-->
+            </ul>
+            <!--헤더메뉴-->
+        </div>
+        <!--헤더컨텐츠-->
+    </header>
+    <!--헤더-->
+    <!--컨테이너-->
+    <div id="container">        
+        <!-- 배너 -->
+        <div class="section01">
+            <p class="text">
+            </p>
+        </div>
+        <!-- 배너 -->
+        <!-- 문의/제휴 -->
+        <div class="section02 page-start">
+            <!-- 제목 -->
+            <div class="tit_box">
+                <p class="tit">문의/제휴</p>
+                <p class="text">질문이나 의견을 양식에 기재하여 문의 남겨주시면 연락드리겠습니다.</p> 
+            </div>
+            <!-- 제목 -->
+            <!-- 문의박스 -->
+            <div class="question_box">
+                <form action="contact.php" method="POST" target="iframe_mail">
+                    <fieldset class="user_info">
+                        <ul>
+                            <li>회사(단체)명 <input type="text" name="user_name" id="user_name" required/></li>
+                            <li>이메일 <input type="email" name="user_email" id="user_email" oninput="minmax()" required></li>
+                            <li>연락처 <input type="tel" name="user_tel" id="user_tel"></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="user_contents">    
+                        <div class="user_question">문의내용 <textarea id="user_question" rows="5" required=""></textarea></div>
+                    </fieldset>
+                    <button class="question_btn" type="submit">문의하기</button>
+                </form>
+            </div>
+            <!-- 문의박스 -->
+            <iframe src="" name="iframe_mail" frameborder="0"></iframe>
+        </div>
+        <!-- 문의/제휴 -->
+    </div>
+    <!--컨테이너-->
+    <!--푸터-->
+    <footer>
+        <ul class="footer_menu">
+            <!--정보-->
+            <li class="info">
+                <p class="tit">INFORMATION</p>
+                <p class="text">(주)머쉬하우스 대표자명 이정훈 김태운</p>
+            </li>
+            <!--정보-->
+            <!--주소-->
+            <li class="location">
+                <p class="tit">LOCATION</p>
+                <p class="text">부산시 연제구 거제천로 136번길 35 머쉬하우스</p>
+            </li>
+            <!--주소-->
+            <!--연락처-->
+            <li class="contact">
+                <p class="tit">CONTACT</p>
+                <p class="text">Tel 051-867-3678</p>
+            </li>
+            <!--연락처-->
+        </ul>
+        <!--탑버튼-->
+        <div class="topbtn">
+            <a href="#" class="arrow"><img src="/images/topbtn_arrow.png" alt="화살표"></a>
+        </div>
+        <!--탑버튼-->
+    </footer>
+    <!--푸터-->
+</body>
+</html>
